@@ -1,0 +1,45 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+  }
+  
+  img{
+    display: block;
+  }
+  
+  #image{
+    max-width: 100%;
+  }
+  
+  #image{
+    margin: 0 auto;
+  }
+  #img-caption{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 70%;
+  }
+
+  #krono{
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  #see-more{
+    text-align: center;
+    padding: 20px;
+    background-color: hsl(0, 0%, 83%);;
+  }
+
+  li{
+    padding: 10px 0;
+  }
+
+  section{
+    background-color: hsl(0, 0%, 83%);
+    padding: 20px;
+  }

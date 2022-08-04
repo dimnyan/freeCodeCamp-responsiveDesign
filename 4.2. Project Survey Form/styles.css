@@ -1,0 +1,42 @@
+*{
+    font-family: sans-serif;
+}
+
+h1, p, label{
+    text-align: center;
+    color: #e0dfdf;
+}
+
+form{
+    color: #e0dfdf;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+body{
+    background-color: rgb(32, 32, 32);
+}
+
+input{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+fieldset{
+    /* border: none; */
+}
+
+input[type="submit"]{
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    height: 2rem;
+  }
+
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
