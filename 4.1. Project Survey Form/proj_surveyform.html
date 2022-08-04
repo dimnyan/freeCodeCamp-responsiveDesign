@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Job Survey Form</h1>
+    <p>Thank you for your time to contribute to this job survey</p>
+    <form id="survey-form">
+        <label id="name-label">Name:
+            <input id="name" type="text" placeholder="e.g Gabriel" required>
+        </label>
+        <label id="email-label">Email:
+            <input id="email" type="email" placeholder="e.g Gabriel@mail.com">
+        </label>
+        <label id="number-label">Age:
+            <input id="number" type="number" placeholder="25" min="12" max="120">
+        </label>
+        <fieldset class="opsi">
+            Do You have a Job?
+            <ul>
+                <li >
+                    <label for="yes">
+                        <input id="yes" name="jobquestion" type="radio" value="yes">
+                        Yes
+                    </label>
+                </li>
+                <li >
+                    <label for="no">
+                        <input id="no" name="jobquestion" type="radio" value="no">
+                        No
+                    </label>
+                </li>
+            </ul>
+            
+            <label>What is your Job?
+                <select id="dropdown">
+                    <option value="1">Engineer</option>
+                    <option value="2">Manager</option>
+                    <option value="3">Businessman</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
