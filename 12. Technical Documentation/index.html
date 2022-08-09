@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<nav id="navbar">
+    <header>HTML DOCUMENTATION</header>
+    <ul>
+        <li><a href="#html_heading" class="nav-link">HTML Heading</a></li>
+        <li><a href="#html_paragraphs" class="nav-link">HTML Paragraphs</a></li>
+        <li><a href="#html_images" class="nav-link">HTML Images</a></li>
+        <li><a href="#html_lists" class="nav-link">HTML Lists</a></li>
+        <li><a href="#html_classes" class="nav-link">HTML Classes</a></li>
+    </ul>
+</nav>
+<body id="main-doc">
+    <section class="main-section" id="html_heading" aria-labelledby="html_heading">
+        <header>HTML Heading</header>
+        <p>HTML headings are defined with the &lth1> to &lth6> tags.</p>
+        <p>&lth1> defines the most important heading. &lth6> defines the least important heading.</p>
+        <code>
+            <pre>&lth1>Heading 1&lt/h1>
+&lth2>Heading 2&lt/h2>
+&lth3>Heading 3&lt/h3>
+&lth4>Heading 4&lt/h4>
+&lth5>Heading 5&lt/h5>
+&lth6>Heading 6&lt/h6></pre>
+        </code>
+    </section>
+    <section class="main-section" id="html_paragraphs" aria-labelledby="html_paragraphs">
+        <header>HTML Paragraphs</header>
+        <p>The HTML &ltp> element defines a paragraph.<br>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+        <code>
+            <pre>
+&ltp>Hello World! %lp/p></pre>
+        </code>
+        <p>The HTML &ltbr> element defines a line break.</p>
+        <p>Use &ltbr> if you want a line break (a new line) without starting a new paragraph:</p>
+        <code>
+            <pre>
+&ltp>This is&ltbr>a paragraph&ltbr>with line breaks.&lt/p></pre>
+        </code>
+        <p>Output:</p>
+        <pre>This is
+a paragraph
+with line breaks.</pre>
+    </section>
+    <section class="main-section" id="html_images" aria-labelledby="html_images">
+        <header>HTML Images</header>
+        <p>Images can improve the design and the appearance of a web page.</p>
+        <p>The &ltimg> tag has two required attributes:</p>
+        <ul>
+            <li>src - Specifies the path to the image</li>
+            <li>alt - Specifies an alternate text for the image</li>
+        </ul>
+        <p>Syntax:</p>
+        <code>
+            <pre>&ltimg src="url" alt="alternatetext"></pre>
+        </code> 
+        <p>Example:</p>
+        <code>
+            <pre>
+&ltimg src="pic_trulli.jpg" alt="Italian Trulli"></pre>
+        </code>
+    </section>
+    <section class="main-section" id="html_lists" aria-labelledby="html_lists">
+        <header>HTML Lists</header>
+        <p>An unordered list starts with the &ltul> tag. Each list item starts with the &ltli> tag.</p>
+        <p>The list items will be marked with bullets (small black circles) by default:</p>
+        <code><pre>
+&ltul>
+    &ltli>Coffee&lt/li>
+    &ltli>Tea&lt/li>
+    &ltli>Milk&lt/li>
+&lt/ul></pre>
+        </code>
+    </section>
+    <section class="main-section" id="html_classes" aria-labelledby="html_classes">
+        <header>HTML Classes</header>
+        <p>The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.</p>
+        <p>In the following example we have three &ltdiv> elements with a class attribute with the value of "city". All of the three &ltdiv> elements will be styled equally according to the .city style definition in the head section:</p>
+        <code>
+            <pre>&lt!DOCTYPE html>
+&lthtml>
+&lthead>
+&ltstyle>
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+&lt/style>
+&lt/head>
+&ltbody>
+
+&ltdiv class="city">
+    &lth2>London&lt/h2>
+    &ltp>London is the capital of England.&lt/p>
+&lt/div>
+
+&ltdiv class="city">
+    &lth2>Paris&lt/h2>
+    &ltp>Paris is the capital of France.&lt/p>
+&lt/div>
+
+&ltdiv class="city">
+    &lth2>Tokyo&lt/h2>
+    &ltp>Tokyo is the capital of Japan.&lt/p>
+&lt/div>
+
+&lt/body>
+&lt/html></pre>
+        </code>
+    </section>
+</body>
+</html>
